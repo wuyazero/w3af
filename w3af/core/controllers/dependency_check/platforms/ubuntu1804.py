@@ -35,6 +35,9 @@ class Ubuntu1804(Ubuntu1604):
     GUI_SYSTEM_PACKAGEs_18 = Ubuntu1604.GUI_SYSTEM_PACKAGES[:]
     GUI_SYSTEM_PACKAGEs_18.remove('libssl-dev')
     GUI_SYSTEM_PACKAGEs_18.append('libssl1.0-dev')
+    GUI_SYSTEM_PACKAGEs_18.remove('python-webkit')
+    GUI_SYSTEM_PACKAGEs_18.append('gir1.2-webkit-3.0')
+    GUI_SYSTEM_PACKAGEs_18.append('python-gi')
     SYSTEM_PACKAGES = {CORE: CORE_SYSTEM_PACKAGES_18,
                        GUI: GUI_SYSTEM_PACKAGEs_18}
 

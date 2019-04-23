@@ -23,7 +23,7 @@ import threading
 import signal
 
 import gtk
-import gobject
+from gi.repository import GObject as gobject
 import w3af.core.controllers.output_manager as om
 from w3af.core.controllers.exceptions import (BaseFrameworkException,
                                               HTTPRequestException,

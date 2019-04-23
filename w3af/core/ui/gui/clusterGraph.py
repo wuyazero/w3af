@@ -21,7 +21,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 # For window creation
 import gtk
 import gtk.gdk
-import gobject
+from gi.repository import GObject as gobject
 import xdot
 
 from w3af.core.controllers.misc.fuzzy_string_cmp import relative_distance

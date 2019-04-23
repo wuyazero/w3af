@@ -20,7 +20,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 """
 import gtk
-import gobject
+from gi.repository import GObject as gobject
 import cairo
 import pango
 import random

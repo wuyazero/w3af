@@ -22,7 +22,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 import gtk
 import Queue
 import threading
-import gobject
+from gi.repository import GObject as gobject
 
 from w3af.core.ui.gui.helpers import end_threads, Throbber
 from w3af.core.ui.gui.entries import EmailEntry

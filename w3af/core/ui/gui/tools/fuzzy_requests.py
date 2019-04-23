@@ -23,7 +23,7 @@ import functools
 import os
 
 import gtk
-import gobject
+from gi.repository import GObject as gobject
 
 from w3af import ROOT_PATH
 from w3af.core.ui.gui import helpers, entries

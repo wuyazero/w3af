@@ -20,7 +20,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 import os
 import gtk
-import gobject
+from gi.repository import GObject as gobject
 import pango
 
 from w3af.core.ui.gui import GUI_DATA_PATH

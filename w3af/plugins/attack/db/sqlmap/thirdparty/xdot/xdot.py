@@ -30,7 +30,7 @@ import time
 import re
 import optparse
 
-import gobject
+from gi.repository import GObject as gobject
 import gtk
 import gtk.gdk
 import gtk.keysyms

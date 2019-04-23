@@ -39,8 +39,8 @@ except ImportError:
     # I'm mostly doing this to avoid import issues like:
     #
     # When using gi.repository you must not import static modules like "gobject".
-    # Please change all occurrences of "import gobject" to
-    # "from gi.repository import GObject"
+    # Please change all occurrences of "from gi.repository import GObject as gobject" to
+    # "from gi.repository from gi.repository import GObject as gobject"
     #
     # In CircleCI
     Notify = None

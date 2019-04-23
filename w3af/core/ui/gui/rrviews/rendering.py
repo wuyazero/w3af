@@ -26,7 +26,7 @@ RENDERING_ENGINES = {'webkit': False,
                      'moz': False}
 
 try:
-    import webkit
+    from gi.repository import WebKit as webkit
     RENDERING_ENGINES['webkit'] = True
 except ImportError:
     pass

@@ -180,6 +180,14 @@ def dependency_check(dependency_set=CORE, exit_on_failure=True):
     failed_deps = get_missing_pip_packages(platform, dependency_set)
     os_packages = get_missing_os_packages(platform, dependency_set)
     external_commands = get_missing_external_commands(platform)
+    
+    if "npm" in os_packages:
+        remove_npm = True
+        for external_command in external_commands:
+            if "npm" in external_command:
+                remove_npm = False
+        if remove_npm:
+            os_packages.remove("npm")
 
     enable_warnings()
 

@@ -21,7 +21,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 import threading
 
 import gtk
-import gobject
+from gi.repository import GObject as gobject
 from w3af.core.ui.gui import helpers, entries
 
 

@@ -23,7 +23,7 @@ from __future__ import absolute_import
 
 # Now that I know that I have them, import them!
 import gtk
-import gobject
+from gi.repository import GObject as gobject
 import shelve
 import os
 import webbrowser

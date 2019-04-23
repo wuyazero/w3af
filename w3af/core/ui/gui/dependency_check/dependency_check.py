@@ -43,7 +43,7 @@ def dependency_check():
         import pygtk
         pygtk.require('2.0')
         import gtk
-        import gobject
+        from gi.repository import GObject as gobject
         assert gtk.gtk_version >= (2, 12)
         assert gtk.pygtk_version >= (2, 12)
     except:

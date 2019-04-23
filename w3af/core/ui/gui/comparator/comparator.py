@@ -4,7 +4,7 @@ import re
 import difflib
 import struct
 import pango
-import gobject
+from gi.repository import GObject as gobject
 import gtk
 import diffutil
 import traceback
